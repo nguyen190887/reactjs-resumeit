@@ -58,4 +58,4 @@ typings/
 .env
 
 # ignore generated file
-src/client/public/bundle.js
+src/public/bundle.js

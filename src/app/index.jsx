@@ -4,6 +4,8 @@ import ActionLink from './components/ActionLink.jsx';
 import Toggle from './components/ToggleLink.jsx';
 import LoggingButton from './components/LoggingButton.jsx';
 
+import LoginControl from './components/greeting/LoginControl.jsx';
+
 class App extends React.Component {
   render () {
     return (
@@ -13,6 +15,9 @@ class App extends React.Component {
         <Toggle />
         <br />
         <LoggingButton />
+        <div>
+          <LoginControl />
+        </div>
       </div>
     );
   }
