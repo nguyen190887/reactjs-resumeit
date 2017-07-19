@@ -10,6 +10,8 @@ var config = {
         path: BUILD_DIR,
         filename: 'bundle.js'
     },
+    // debug: true,
+    devtool: '#eval-source-map',
     module: {
         loaders: [{
             test: /\.jsx?/,

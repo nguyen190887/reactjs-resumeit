@@ -12,7 +12,14 @@ function Greeting (props) {
     const isLoggedIn = props.isLoggedIn;
 
     if (isLoggedIn) {
-        return <UserGreeting />;
+        return (
+            <div>
+                <UserGreeting />
+                {props.unreadMessages.length &&
+                    <span>({props.unreadMessages.length} unread notification)</span>    
+                }
+            </div>
+        );
     }
     return <GuestGreeting />;
 }
