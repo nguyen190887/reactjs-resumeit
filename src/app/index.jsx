@@ -5,6 +5,7 @@ import Toggle from './components/ToggleLink.jsx';
 import LoggingButton from './components/LoggingButton.jsx';
 
 import LoginControl from './components/greeting/LoginControl.jsx';
+import NameForm from './components/forms/NameForm.jsx';
 
 class App extends React.Component {
   render () {
@@ -18,6 +19,8 @@ class App extends React.Component {
         <div>
           <LoginControl />
         </div>
+        <hr />
+        <NameForm />
       </div>
     );
   }
