@@ -6,6 +6,7 @@ import LoggingButton from './components/LoggingButton.jsx';
 import LoginControl from './components/greeting/LoginControl.jsx';
 import NameForm from './components/forms/NameForm.jsx';
 import Calculator from './components/forms/TemperatureCalculator.jsx';
+import {WelcomeDialog, SignUpDialog} from './components/Dialog.jsx';
 
 class App extends React.Component {
   render () {
@@ -23,6 +24,10 @@ class App extends React.Component {
         <NameForm />
         <hr />
         <Calculator />
+        <hr />
+        <WelcomeDialog />
+        <hr />
+        <SignUpDialog />
       </div>
     );
   }
