@@ -7,6 +7,7 @@ import LoginControl from './components/greeting/LoginControl.jsx';
 import NameForm from './components/forms/NameForm.jsx';
 import Calculator from './components/forms/TemperatureCalculator.jsx';
 import {WelcomeDialog, SignUpDialog} from './components/Dialog.jsx';
+import {FilterableProductTable, PRODUCTS} from './components/ProductList.jsx';
 
 class App extends React.Component {
   render () {
@@ -28,6 +29,8 @@ class App extends React.Component {
         <WelcomeDialog />
         <hr />
         <SignUpDialog />
+        <hr />
+        <FilterableProductTable products={PRODUCTS} />
       </div>
     );
   }
